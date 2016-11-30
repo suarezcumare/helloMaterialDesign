@@ -1,5 +1,6 @@
 package com.example.suarezcumare.hellomaterial;
 
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,11 +29,8 @@ public class MainActivity extends AppCompatActivity {
         sesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v,getResources().getString(R.string.long_mensaje), Snackbar.LENGTH_SHORT)
-                        .setActionTextColor(getResources().getColor(R.color.colorPrimary))
-                        .show();
-
-                setContentView(R.layout.activity_lista_mascotas);
+                Intent intent = new Intent(MainActivity.this,ListaMascotas.class);
+                startActivity(intent);
             }
         });
 
