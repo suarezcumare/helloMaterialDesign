@@ -3,4 +3,15 @@
     <string name="app_full_name">Olimpiadas Paralimpicas</string>
     <string name="btn_session">iniciar sesion</string>
     <string name="btn_register">registrarse</string>
+    <string name="long_mensaje">muestra mensaje</string>
+    <string name="text_action">muestra este text</string>
+    
+    <string-array name="listAnimals">
+        <item> Jesyner </item>
+        <item> Tony </item>
+        <item> Antony </item>
+        <item> Nereyda </item>
+        <item> Jesus </item>
+
+    </string-array>
 </resources>
